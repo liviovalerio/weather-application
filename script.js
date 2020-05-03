@@ -2,8 +2,8 @@ let town = 'Liège';
 let button = document.querySelector('#changer');
 
 function getTemperature(town) {
-    let url = `https://api.openweathermap.org/data/2.5/weather?q=${town}&appid=313db54332243f97fd92c0f47ea45453&units=metric`
-    const requete = new XMLHttpRequest();
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${town}&appid=313db54332243f97fd92c0f47ea45453&units=metric`
+    let requete = new XMLHttpRequest();
     requete.open('GET', url);
     requete.responseType = 'json';
     requete.send();
